@@ -2,9 +2,9 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-MODEL_PATH = r".\models\model_heart_cv.joblib"
-DATASET_PATH = r".\datasets\heart.csv"
-SCALER_PATH = r".\models\scaler_heart.joblib"
+MODEL_PATH = "./models/model_heart_cv.joblib"
+DATASET_PATH = "./datasets/heart.csv"
+SCALER_PATH = "./models/scaler_heart.joblib"
 
 df = pd.read_csv(DATASET_PATH)
 model = joblib.load(MODEL_PATH)
